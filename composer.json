@@ -1,0 +1,38 @@
+{
+  "name": "merchnt/haproxy-api-client",
+  "description": "API client for HAProxy through HTTP, TCP or Unix domain socket",
+  "keywords": [
+    "haproxy",
+    "libary",
+    "api"
+  ],
+  "homepage": "https://github.com/merchnt/haproxy-api-client",
+  "type": "library",
+  "require": {
+    "guzzlehttp/guzzle": "~6.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Johnathan Dell",
+      "email": "open-source@merchnt.co"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Merchnt\\HAProxyApiClient\\": "src"
+    },
+    "exclude-from-classmap": [
+      "Tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Merchnt\\HAProxyApiClient\\Tests\\": "Tests/"
+    }
+  },
+  "minimum-stability": "stable"
+}
